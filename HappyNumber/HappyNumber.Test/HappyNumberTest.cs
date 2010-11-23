@@ -43,5 +43,11 @@ namespace HappyNumber.Test
 
             happynumbers.All(x => x.IsHappy()).ShouldBeTrue();
         }
+
+        [Test]
+        public void for96_is_happy()
+        {
+            496.IsHappy().ShouldBeTrue();
+        }
     }
 }
