@@ -24,6 +24,7 @@ namespace HappyNumber.Test
        [Test]
        public void Two_is_not_happy()
        {
+           /*Martin er kul*/
            2.IsHappy().ShouldBeFalse();
        }
     }
