@@ -21,5 +21,10 @@ namespace HappyNumber.Test
        {
            1.IsHappy().ShouldBeTrue();
        }
+       [Test]
+       public void Two_is_not_happy()
+       {
+           2.IsHappy().ShouldBeFalse();
+       }
     }
 }
