@@ -9,7 +9,7 @@ namespace HappyNumber
     {
         public static bool IsHappy(this int number)
         {
-            return true;
+            return number == 1;
         }
     }
 }

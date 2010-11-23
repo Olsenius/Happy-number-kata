@@ -16,16 +16,22 @@ namespace HappyNumber.Test
     [TestFixture]
     public class HappyNumberTest
     {
-       [Test]
+        [Test]
         public void One_is_happy()
-       {
-           1.IsHappy().ShouldBeTrue();
-       }
-       [Test]
-       public void Two_is_not_happy()
-       {
-           /*Martin er kul*/
-           2.IsHappy().ShouldBeFalse();
-       }
+        {
+            1.IsHappy().ShouldBeTrue();
+        }
+
+        [Test]
+        public void Two_is_not_happy()
+        {
+            2.IsHappy().ShouldBeFalse();
+        }
+
+        [Test]
+        public void Seven_is_happy()
+        {
+            7.IsHappy().ShouldBeTrue();
+        }
     }
 }
