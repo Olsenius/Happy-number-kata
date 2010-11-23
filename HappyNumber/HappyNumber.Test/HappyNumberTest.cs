@@ -9,7 +9,9 @@
  * that do not end in 1 are unhappy numbers (or sad numbers).
  * */
 
+using System.Linq;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace HappyNumber.Test
 {
@@ -35,10 +37,11 @@ namespace HappyNumber.Test
         }
 
         [Test]
-        public void Digit_Test()
+        public void All_happy_numbers_below_100_should_be_happy()
         {
-            int[] digits = 10.Digits();
-            digits.ShouldContain(1);
+            var happynumbers = new List<int> { 1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 49, 68, 70, 79, 82, 86, 91, 94, 97 };
+
+            happynumbers.All(x => x.IsHappy()).ShouldBeTrue();
         }
     }
 }
