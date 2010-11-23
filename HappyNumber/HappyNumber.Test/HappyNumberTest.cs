@@ -33,5 +33,12 @@ namespace HappyNumber.Test
         {
             7.IsHappy().ShouldBeTrue();
         }
+
+        [Test]
+        public void Digit_Test()
+        {
+            int[] digits = 10.Digits();
+            digits.ShouldContain(1);
+        }
     }
 }
